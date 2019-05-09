@@ -11,7 +11,7 @@
 
 OLEDClass OLED(OLEDPIN, SDA, SCL);
 Blob blob;
-InfluxPublisher publisher(blob.readingsQueue,"monitor.phisaver.com", 8086, "test", "blobs", "bbeeson", "imagine");
+InfluxPublisher publisher(blob.readingsQueue,"monitor.phisaver.com", 8086, "test", "blobs", "bbeeson", "*****");
 LoraReaderPoll reader(blob.readingsQueue);
 BlobSensor ts(blob.readingsQueue);
 
